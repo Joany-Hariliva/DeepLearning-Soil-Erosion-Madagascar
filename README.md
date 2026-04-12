@@ -1,27 +1,28 @@
-# 🌍 Prédiction de la Susceptibilité aux Lavaka par Deep Learning
-**Étude de l'érosion des sols dans le Bassin Versant de l'Alaotra, Madagascar**
-
-## 🗺️ Cartographie Résultante
-Voici le produit final de la modélisation : une carte de susceptibilité à haute résolution permettant d'identifier les zones critiques.
-
-![CARTE DE LA SUSCEPTIBILITÉ](./Cartes/Cartes.jpg)
-
-*Les cartes générées localisent les zones prioritaires pour la lutte contre l'érosion. Livrables disponibles dans le dossier [Cartes/](./Cartes).*
-
----
+# 🤖 Deep Learning for Soil Erosion Modeling
+**Predicting Landslide (Lavaka) Susceptibility using Artificial Neural Networks & Multi-source Data Fusion**
 
 ## 📊 Performance du Modèle ANN
-Le réseau de neurones artificiels (ANN) a été entraîné sur un inventaire de **1 400 points** avec une fusion de données multi-sources. 
+Avant l'application terrain, le modèle a été rigoureusement validé sur un inventaire de plus de **4 000 points**. Le réseau de neurones (ANN) démontre une forte capacité de généralisation.
 
-* **Précision Globale (Accuracy) :** 81.26 %
 * **AUC (Area Under Curve) :** 0.8853
-* **Données d'entrée :** Sentinel-2 (NDVI), SRTM (Pente, Rugosité, Exposition), WorldClim (Précipitations).
+* **Feature Engineering :** Fusion de données Sentinel-2 (NDVI), SRTM (Topographie) et WorldClim.
 
 ![Courbe de Performance ROC](./Courbes/04_Courbe_ROC.png)
 
-*Vous pouvez retrouver l'ensemble des analyses dans le dossier [Courbes/](./Courbes).*
+*L'analyse complète des métriques (Matrice de confusion, Calibration) est disponible dans le dossier [Courbes/](./Courbes).*
 
-## 📂 Structure du Projet
-* `Code.ipynb` : Script complet de prétraitement et d'entraînement (PyTorch).
-* `/Courbes` : Visualisations des performances (ROC, Matrice de Confusion).
-* `/Cartes` : Cartographie finale et couches SIG.
+---
+
+## 🌍 Application : Cartographie Prédictive
+Une fois validé, le modèle a été déployé pour générer une carte de susceptibilité à haute résolution du Bassin Versant de l'Alaotra. C'est l'étape de **déploiement du modèle** sur des données réelles non vues.
+
+![CARTE DE LA SUSCEPTIBILITÉ](./Cartes/Cartes.jpg)
+
+*Les résultats localisent les zones prioritaires pour les interventions de conservation. Livrables SIG disponibles dans le dossier [Cartes/](./Cartes).*
+
+---
+
+## 📂 Structure du Repository
+* `Code.ipynb` : Pipeline complet (Preprocessing, Training PyTorch, Evaluation).
+* `/Courbes` : Visualisations Data Science (ROC, Importance des variables).
+* `/Cartes` : Résultats de l'inférence spatiale (Cartographie finale).
