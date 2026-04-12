@@ -1,14 +1,25 @@
-# DeepLearning-Soil-Erosion-Madagascar
-Deep Learning approach (PyTorch) using Sentinel-2 and SRTM data to predict soil erosion susceptibility in the Alaotra Basin, Madagascar.
+# 🌍 Prédiction de la Susceptibilité aux Lavaka par Deep Learning
+**Étude de l'érosion des sols dans le Bassin Versant de l'Alaotra, Madagascar**
 
-## 📊 Résultats de l'Étude
+## 🗺️ Cartographie Résultante
+Voici le produit final de la modélisation : une carte de susceptibilité à haute résolution permettant d'identifier les zones critiques.
 
-### Courbes de Performance
-Les résultats montrent une excellente capacité de discrimination (**AUC = 0.88**). 
-Vous pouvez retrouver l'ensemble des analyses dans le dossier [Courbes/](./Courbes).
+<p align="center">
+  <img src="./Cartes/Carte_Susceptibilite_Lavaka_Alaotra.jpg" alt="Carte de Susceptibilité Lavaka" width="800">
+  <br>
+  <em>CARTE DE LA SUSCEPTIBILITÉ AUX LAVAKA DANS LE BASSIN VERSANT DE L'ALAOTRA ET SES ENVIRONS</em>
+</p>
 
-![Courbe ROC](./Courbes/04_Courbe_ROC.png)
+---
 
-### Cartographie Prédictive
-Les cartes générées localisent les zones prioritaires pour la lutte contre l'érosion.
-Livrables disponibles dans le dossier [Cartes/](./Cartes/CARTE DE LA SUSCEPTIBILITÉ AUX LAVAKA DANS LE BASSIN VERSANT DE L'ALAOTRA ET SES ENVIRONS.jpg).
+## 📊 Performance du Modèle ANN
+Le réseau de neurones artificiels (ANN) a été entraîné sur un inventaire de **1 400 points** avec une fusion de données multi-sources.
+
+* **Précision Globale (Accuracy) :** 81.26 %
+* **AUC (Area Under Curve) :** 0.8853
+* **Données d'entrée :** Sentinel-2 (NDVI), SRTM (Pente, Rugosité, Exposition), WorldClim (Précipitations).
+
+## 📂 Structure du Projet
+* `Code.ipynb` : Script complet de prétraitement et d'entraînement (PyTorch).
+* `/Courbes` : Visualisations des performances (ROC, Matrice de Confusion).
+* `/Cartes` : Cartographie finale et couches SIG.
