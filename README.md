@@ -1,24 +1,25 @@
 # 🌍 Prédiction de la Susceptibilité aux Lavaka par Deep Learning
 **Étude de l'érosion des sols dans le Bassin Versant de l'Alaotra, Madagascar**
 
-## 📊 Résultats de l'Étude
+## 🗺️ Cartographie Résultante
+Voici le produit final de la modélisation : une carte de susceptibilité à haute résolution permettant d'identifier les zones critiques.
 
-### Courbes de Performance
-Les résultats montrent une excellente capacité de discrimination (**AUC = 0.88**). 
-Vous pouvez retrouver l'ensemble des analyses dans le dossier [Courbes/](./Courbes).
+![CARTE DE LA SUSCEPTIBILITÉ](./Cartes/Cartes.jpg)
 
-![Courbe ROC](./Courbes/04_Courbe_ROC.png)
+*Les cartes générées localisent les zones prioritaires pour la lutte contre l'érosion. Livrables disponibles dans le dossier [Cartes/](./Cartes).*
 
-### Cartographie Prédictive
-Les cartes générées localisent les zones prioritaires pour la lutte contre l'érosion.
-Livrables disponibles dans le dossier [Carte Predictif de Lavaka/](./Carte Predictif de Lavaka).
-> *Visualisation directe :*
-![Carte de Susceptibilité](./Carte Predictif de Lavaka/CARTE_DE_LA_SUSCEPTIBILITÉ_AUX_LAVAKA_DANS_LE_BASSIN_VERSANT_DE_L'ALAOTRA_ET_SES_ENVIRONS.jpg)
+---
 
-## 📂 Structure du Projet
-* `Code.ipynb` : Script complet de prétraitement et d'entraînement (PyTorch).
-* `/Courbes` : Visualisations des performances (ROC, Matrice de Confusion).
-* `/Cartes` : Cartographie finale et couches SIG.VI), SRTM (Pente, Rugosité, Exposition), WorldClim (Précipitations).
+## 📊 Performance du Modèle ANN
+Le réseau de neurones artificiels (ANN) a été entraîné sur un inventaire de **1 400 points** avec une fusion de données multi-sources. 
+
+* **Précision Globale (Accuracy) :** 81.26 %
+* **AUC (Area Under Curve) :** 0.8853
+* **Données d'entrée :** Sentinel-2 (NDVI), SRTM (Pente, Rugosité, Exposition), WorldClim (Précipitations).
+
+![Courbe de Performance ROC](./Courbes/04_Courbe_ROC.png)
+
+*Vous pouvez retrouver l'ensemble des analyses dans le dossier [Courbes/](./Courbes).*
 
 ## 📂 Structure du Projet
 * `Code.ipynb` : Script complet de prétraitement et d'entraînement (PyTorch).
