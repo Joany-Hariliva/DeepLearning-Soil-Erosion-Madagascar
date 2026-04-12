@@ -13,7 +13,7 @@ Vous pouvez retrouver l'ensemble des analyses dans le dossier [Courbes/](./Courb
 Les cartes générées localisent les zones prioritaires pour la lutte contre l'érosion.
 Livrables disponibles dans le dossier [Carte Predictif de Lavaka/](./Carte Predictif de Lavaka).
 > *Visualisation directe :*
-![Carte de Susceptibilité](./Cartes/CARTE_DE_LA_SUSCEPTIBILITÉ_AUX_LAVAKA_DANS_LE_BASSIN_VERSANT_DE_L'ALAOTRA_ET_SES_ENVIRONS.jpg)
+![Carte de Susceptibilité](./Carte Predictif de Lavaka/CARTE_DE_LA_SUSCEPTIBILITÉ_AUX_LAVAKA_DANS_LE_BASSIN_VERSANT_DE_L'ALAOTRA_ET_SES_ENVIRONS.jpg)
 
 ## 📂 Structure du Projet
 * `Code.ipynb` : Script complet de prétraitement et d'entraînement (PyTorch).
