@@ -11,4 +11,4 @@ Vous pouvez retrouver l'ensemble des analyses dans le dossier [Courbes/](./Courb
 
 ### Cartographie Prédictive
 Les cartes générées localisent les zones prioritaires pour la lutte contre l'érosion.
-Livrables disponibles dans le dossier [Cartes/](./Cartes).
+Livrables disponibles dans le dossier [Cartes/](./Cartes/CARTE DE LA SUSCEPTIBILITÉ AUX LAVAKA DANS LE BASSIN VERSANT DE L'ALAOTRA ET SES ENVIRONS.jpg).
