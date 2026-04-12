@@ -1,26 +1,19 @@
 # 🌍 Prédiction de la Susceptibilité aux Lavaka par Deep Learning
 **Étude de l'érosion des sols dans le Bassin Versant de l'Alaotra, Madagascar**
 
-# 🌍 Prédiction de la Susceptibilité aux Lavaka par Deep Learning
-**Étude de l'érosion des sols dans le Bassin Versant de l'Alaotra, Madagascar**
+## 📊 Résultats de l'Étude
 
-## 🗺️ Cartographie Résultante
-Voici le produit final de la modélisation : une carte de susceptibilité à haute résolution permettant d'identifier les zones critiques.
+### Courbes de Performance
+Les résultats montrent une excellente capacité de discrimination (**AUC = 0.88**). 
+Vous pouvez retrouver l'ensemble des analyses dans le dossier [Courbes/](./Courbes).
 
-![CARTE DE LA SUSCEPTIBILITÉ AUX LAVAKA](./Cartes/carte_finale.jpg)
+![Courbe ROC](./Courbes/04_Courbe_ROC.png)
 
-*CARTE DE LA SUSCEPTIBILITÉ AUX LAVAKA DANS LE BASSIN VERSANT DE L'ALAOTRA ET SES ENVIRONS*
-
----
-
-## 📊 Performance du Modèle ANN
-Le réseau de neurones artificiels (ANN) a été entraîné sur un inventaire de **1 400 points** avec une fusion de données multi-sources. 
-
-* **Précision Globale (Accuracy) :** 81.26 %
-* **AUC (Area Under Curve) :** 0.8853
-* **Données d'entrée :** Sentinel-2 (NDVI), SRTM (Pente, Rugosité, Exposition), WorldClim (Précipitations).
-
-![Courbe de Performance ROC](./Courbes/courbe_roc.png)
+### Cartographie Prédictive
+Les cartes générées localisent les zones prioritaires pour la lutte contre l'érosion.
+Livrables disponibles dans le dossier [Carte Predictif de Lavaka/](./Carte Predictif de Lavaka).
+> *Visualisation directe :*
+![Carte de Susceptibilité](./Cartes/CARTE_DE_LA_SUSCEPTIBILITÉ_AUX_LAVAKA_DANS_LE_BASSIN_VERSANT_DE_L'ALAOTRA_ET_SES_ENVIRONS.jpg)
 
 ## 📂 Structure du Projet
 * `Code.ipynb` : Script complet de prétraitement et d'entraînement (PyTorch).
